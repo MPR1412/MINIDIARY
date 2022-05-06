@@ -25,6 +25,7 @@ class _SecondRouteState extends State<SecondRoute> {
       title: 'Notes',
       theme: theme,
       home: MyHomePage(title: 'Home', changeTheme: setTheme),
+      debugShowCheckedModeBanner: false,
     );
   }
 

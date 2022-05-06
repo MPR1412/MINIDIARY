@@ -28,12 +28,12 @@ class Splash2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
-      seconds: 4,
+      seconds: 5,
       navigateAfterSeconds: new App(),
       title: new Text('YOURS MINIDIARY',textScaleFactor: 2,),
       image: new Image.asset('assets/images/splash.jpg'),
       loadingText: Text("Here you go"),
-      photoSize: 250.0,
+      photoSize: 200.0,
       loaderColor: Colors.blue,
     );
   }
@@ -131,7 +131,7 @@ class App extends StatelessWidget {
       bodyTextStyle: const TextStyle(fontFamily: 'MyFont', color: Colors.white),
     ),
 
-    PageViewModel(
+   /* PageViewModel(
       pageBackground: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -160,7 +160,7 @@ class App extends StatelessWidget {
       titleTextStyle:
       const TextStyle(fontFamily: 'MyFont', color: Colors.white),
       bodyTextStyle: const TextStyle(fontFamily: 'MyFont', color: Colors.white),
-    ),
+    ),*/
 
   ];
 
@@ -200,7 +200,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 2,
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black45,
@@ -208,7 +208,7 @@ class _MyHomePageState extends State<MyHomePage> {
             tabs: [
               Tab(icon: Icon(Icons.done), text: "TODO",),
               Tab(icon: Icon(Icons.calendar_today_outlined), text: "DIARY"),
-              Tab(icon: Icon(Icons.money_outlined), text: "EXPENSES",),
+             // Tab(icon: Icon(Icons.money_outlined), text: "EXPENSES",),
             ],
           ),
           title: Text('MINIDIARY'),
@@ -216,7 +216,7 @@ class _MyHomePageState extends State<MyHomePage> {
         body: TabBarView(
           children: [
 
-            //Center( child: Text("Page 2")),
+            //Center( child: Text("Page7 2")),
             Container(
                //Text("Hello! I am in the container widget", style: TextStyle(fontSize: 25)),
               height: 120.0,
@@ -275,7 +275,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
             ),
-            Container(
+         /*   Container(
               // child:Image.network('https://images.shiksha.com/mediadata/images/1595847039phpTRsobh.jpeg');
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -288,7 +288,7 @@ class _MyHomePageState extends State<MyHomePage> {
               margin: EdgeInsets.all(25),
               alignment: Alignment.bottomCenter,
               child: RaisedButton(
-                child: Text('ADD EXPENSES', style: TextStyle(fontSize: 20.0),),
+               child: Text('ADD EXPENSES', style: TextStyle(fontSize: 20.0),),
                 color: Colors.black,
                 shape: StadiumBorder(
                   side: BorderSide(color: Colors.red, width: 3),
@@ -302,7 +302,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   );
                 },
               ),
-            ),
+            ),*/
           ],
         ),
       ),
